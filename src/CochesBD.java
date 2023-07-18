@@ -9,7 +9,7 @@ public class CochesBD {
 
     public void mostrarLista(){
         for (int i = 0; i < listaCoches.size() ; i++){
-            System.out.println("Datos del coches numero " + i + ": " + listaCoches.get(i));
+            System.out.println("Datos del coches numero " + i + ": " + listaCoches.get(i).marca);
         }
     }
 }

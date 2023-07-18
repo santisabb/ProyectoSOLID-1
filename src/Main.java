@@ -19,8 +19,8 @@ public class Main {
         listaCoches1.agregarCoche(coche1);
 
         coche2.setPrecio(50000);
-        coche2.setMarca("Renault");
-        coche2.setModelo("Zoe");
+        coche2.setMarca("Toyota");
+        coche2.setModelo("Etios");
         coche2.setCantidadPuertas(3);
         coche2.setRuedaAuxilio(false);
         coche2.setCapacidadTanque(500);
@@ -28,8 +28,8 @@ public class Main {
         listaCoches1.agregarCoche(coche2);
 
         coche3.setPrecio(50000);
-        coche3.setMarca("Renault");
-        coche3.setModelo("Zoe");
+        coche3.setMarca("Ford");
+        coche3.setModelo("K");
         coche3.setCantidadPuertas(3);
         coche3.setRuedaAuxilio(false);
         coche3.setDuracionBateria(86.12);
