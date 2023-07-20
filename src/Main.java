@@ -7,14 +7,13 @@ public class Main {
         electrico.autonomia = "Buena autonomia";
         electrico.marca = "Renault";
         electrico.aumentoVelocidad();
-        electrico.consumoNafta();
-        System.out.println("ERROR: Un auto electrico no puede consumir nafta");
 
         cocheNafta.ruedaAuxilio = true;
         cocheNafta.precio = 50000;
-        System.out.println(cocheNafta.porcentajeBateria());
+        cocheNafta.aumentoVelocidad();
 
         cocheHibrido.modoConsumo = "Electrico";
         cocheHibrido.cantidadPuertas = 5;
+        cocheHibrido.aumentoVelocidad();
     }
 }

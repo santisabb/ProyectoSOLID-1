@@ -1,4 +1,4 @@
-public class CocheHibrido extends Coche implements Acelerar{
+public class CocheHibrido extends Coche implements Acelerar {
 
     public CocheHibrido(){
         this.precio = precio;
@@ -17,15 +17,13 @@ public class CocheHibrido extends Coche implements Acelerar{
         return modoConsumo;
     }
 
-    public int  aumentoVelocidad(){
-        return  this.velocidad++;
+    @Override
+    public int aumentoVelocidad() {
+        return this.velocidad++;
     }
 
-    public int consumoNafta(){
-        return capacidadTanque--;
-    }
-
-    public String porcentajeBateria(){
-        return "Tiene %100 de bateria";
+    @Override
+    public int disminuyoVelocidad() {
+        return this.velocidad--;
     }
 }

@@ -17,15 +17,13 @@ public class CocheNafta extends Coche implements Acelerar{
         return ruedaAuxilio;
     }
 
-    public int aumentoVelocidad(){
+    @Override
+    public int aumentoVelocidad() {
         return this.velocidad++;
     }
 
-    public int consumoNafta(){
-        return capacidadTanque--;
-    }
-
-    public String porcentajeBateria(){
-        return "ERROR: Coche nafta no consume bateria para movimiento";
+    @Override
+    public int disminuyoVelocidad() {
+        return this.velocidad--;
     }
 }

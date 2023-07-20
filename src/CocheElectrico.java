@@ -1,4 +1,4 @@
-public class CocheElectrico extends Coche implements Acelerar{
+public class CocheElectrico extends Coche implements Acelerar {
 
     public CocheElectrico(){
         this.precio = precio;
@@ -16,15 +16,18 @@ public class CocheElectrico extends Coche implements Acelerar{
         return maxVelocidad;
     }
 
-    public int  aumentoVelocidad(){
+    @Override
+    public int aumentoVelocidad() {
+        return this.velocidad++;
+    }
+
+    @Override
+    public int disminuyoVelocidad() {
         return this.velocidad--;
     }
 
-    public int consumoNafta(){
-        return this.capacidadTanque = 0;
-    }
-
-    public String porcentajeBateria(){
-        return "%80 de bateria";
+    @Override
+    public int getCantidadPuertas() {
+        return super.getCantidadPuertas();
     }
 }
