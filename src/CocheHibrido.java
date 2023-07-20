@@ -1,4 +1,4 @@
-public class CocheHibrido extends Coche{
+public class CocheHibrido extends Coche implements Acelerar{
 
     public CocheHibrido(){
         this.precio = precio;
@@ -6,6 +6,7 @@ public class CocheHibrido extends Coche{
         this.cantidadPuertas = cantidadPuertas;
         this.duracionBateria = duracionBateria;
         this.modoConsumo = modoConsumo;
+        this.capacidadTanque = capacidadTanque;
     }
 
     public double getDuracionBateria() {
@@ -14,5 +15,17 @@ public class CocheHibrido extends Coche{
 
     public String getModoConsumo() {
         return modoConsumo;
+    }
+
+    public int  aumentoVelocidad(){
+        return  this.velocidad++;
+    }
+
+    public int consumoNafta(){
+        return capacidadTanque--;
+    }
+
+    public String porcentajeBateria(){
+        return "Tiene %100 de bateria";
     }
 }

@@ -1,4 +1,4 @@
-abstract class Coche {
+abstract class Coche implements Acelerar{
     int cantidadPuertas;
     double precio;
     String marca;
@@ -8,6 +8,7 @@ abstract class Coche {
     int maxVelocidad;
     double duracionBateria;
     String modoConsumo;
+    int velocidad = 0;
 
     public int getCantidadPuertas() {
         return cantidadPuertas;

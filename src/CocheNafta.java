@@ -1,4 +1,4 @@
-public class CocheNafta extends Coche{
+public class CocheNafta extends Coche implements Acelerar{
 
 
     public CocheNafta(){
@@ -15,5 +15,17 @@ public class CocheNafta extends Coche{
 
     public boolean isRuedaAuxilio() {
         return ruedaAuxilio;
+    }
+
+    public int aumentoVelocidad(){
+        return this.velocidad++;
+    }
+
+    public int consumoNafta(){
+        return capacidadTanque--;
+    }
+
+    public String porcentajeBateria(){
+        return "ERROR: Coche nafta no consume bateria para movimiento";
     }
 }
