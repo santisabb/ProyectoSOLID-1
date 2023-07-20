@@ -1,6 +1,4 @@
 public class CocheHibrido extends Coche{
-    double duracionBateria;
-    String modoConsumo;
 
     public CocheHibrido(){
         this.precio = precio;

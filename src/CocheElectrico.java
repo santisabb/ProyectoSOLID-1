@@ -1,6 +1,4 @@
 public class CocheElectrico extends Coche{
-    String autonomia;
-    int maxVelocidad;
 
     public CocheElectrico(){
         this.precio = precio;

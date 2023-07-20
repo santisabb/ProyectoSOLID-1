@@ -1,6 +1,5 @@
 public class CocheNafta extends Coche{
-    int capacidadTanque;
-    boolean ruedaAuxilio;
+
 
     public CocheNafta(){
         this.precio = precio;

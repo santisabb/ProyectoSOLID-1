@@ -1,11 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        CocheElectrico cocheElectrico = new CocheElectrico();
+        Coche naftero = new CocheElectrico();
         CocheNafta cocheNafta = new CocheNafta();
-        CocheHibrido cocheHibrido = new CocheHibrido();
+        Coche cocheHibrido = new CocheHibrido();
 
-        cocheElectrico.maxVelocidad = 500;
-        cocheElectrico.marca = "Renault";
+        naftero.autonomia = "Buena autonomia";
+        naftero.marca = "Renault";
 
         cocheNafta.ruedaAuxilio = true;
         cocheNafta.precio = 50000;
